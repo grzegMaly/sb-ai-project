@@ -1,0 +1,82 @@
+.App {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #F0F0F0;
+    font-weight: bold;
+}
+
+button.active {
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #CCC;
+    border-radius: 5px;
+}
+
+.empty-image-slot {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    border: 2px dashed #CCC;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+}
+
+.output {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #F4F4F4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+pre.recipe-text {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: auto;
+    font-size: calc(12px + 0.5vw);
+    line-height: 1.6;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
